@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build --modern",
+    "build": "vue-cli-service build",
     "test:ImageLoader": "vue serve ./src/components/ImageLoader/test.vue",
     "test:Empty": "vue serve ./src/components/Empty/test.vue",
     "test:Menu": "vue serve ./src/components/Menu/test.vue",
@@ -13,11 +13,14 @@
     "test:LayOut": "vue serve ./src/components/LayOut/test.vue",
     "test:RightList": "vue serve ./src/views/Blog/components/test-RightList.vue",
     "test:MessageArea": "vue serve ./src/components/MessageArea/testMessageArea.vue",
-    "test:ToTop": "vue serve ./src/components/ToTop/test.vue"
+    "test:ToTop": "vue serve ./src/components/ToTop/test.vue",
+    "predeploy": "npm run dist",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "gh-pages": "^3.2.3",
     "highlight.js": "^11.2.0",
     "mockjs": "^1.1.0",
     "querystring": "^0.2.1",
