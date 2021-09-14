@@ -15,7 +15,7 @@ const router = new VueRouter({
     // 动态路由 path中有动态参数:xxx时， 里面的params属性就是动态参数对象 query属性就是？拼接的路径信息
     routes,
     // 匹配模式
-    mode: "history",
+    mode: 'hash',
 })
 
 // !导航守卫 页面跳转后 改变网站路由标题

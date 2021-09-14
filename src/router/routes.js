@@ -54,6 +54,6 @@ export default [
     // }
     {
         path: '*',
-        redirect: { name: 'Home' },
+        redirect: { name: 'Blog' },
     },
 ];
