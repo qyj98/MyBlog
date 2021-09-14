@@ -10,5 +10,6 @@ module.exports = {
         }
     },
     //!融合webpack配置 优化
-    configureWebpack: require("./webpack.config")
+    configureWebpack: require("./webpack.config"),
+    publicPath:'',
 }
