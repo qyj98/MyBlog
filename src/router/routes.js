@@ -17,7 +17,7 @@
 // ]
 
 // !路由匹配规则 分包优化后， 将路由匹配组件用函数动态引入(引入异步组件)返回一个promise：组件配置对象（路由懒加载，用到这个页面的时候就去加载这个组件） 
-import NotFound from "@/views/NotFound.vue";
+// import NotFound from "@/views/NotFound.vue";
 
 export default [
     {
@@ -49,7 +49,11 @@ export default [
         name: 'About', path: "/about", component: () => import(/* webpackChunkName: "About" */ "@/views/About"),
         meta: { title: "关于我" }
     },
-    {//! *:通配符，除了上述路径外，其余路径都指向该组件
-        name: '404', path: "*", component: NotFound
-    }
+    // {//! *:通配符，除了上述路径外，其余路径都指向该组件
+    //     name: '404', path: "*", component: NotFound
+    // }
+    {
+        path: '*',
+        redirect: { name: 'Home' },
+    },
 ];

@@ -14,7 +14,7 @@
     </li>
     <li class="qq-content">
       <div class="qqchart pop">
-        <img :src="data.qqQrCode" alt="" />
+        <img src="../../../assets/qq.jpg" />
       </div>
       <a
         :href="`tencent://message/?Menu=yes&uin=${data.qq}&Service=300&sigT=45a1e5847943b64c6ff3990f8a9e644d2b31356cb0b4ac6b24663a3c8dd0f8aa12a595b1714f9d45`"
@@ -25,7 +25,7 @@
     </li>
     <li class="we-content">
       <div class="wechart pop">
-        <img :src="data.weixinQrCode" alt="" />
+        <img src="../../../assets/wexin.jpg" />
       </div>
       <a href="">
         <Icon type="weixin" />
